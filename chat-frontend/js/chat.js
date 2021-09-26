@@ -5,7 +5,7 @@ function sendMsgBox(msg, time) {
 </div>`;
 }
 
-/* 채팅방의 메시지를 초기화하는 메서드 */
+/* 기존의 채팅 내역을 출력하는 메서드 */
 function initMessage(data) {
   let chatBox = document.querySelector("#chat-box");
 
@@ -13,15 +13,15 @@ function initMessage(data) {
 
   let chatOutgoingBox = document.createElement("div");
   chatOutgoingBox.className = "outgoing_msg";
-  chatOutgoingBox.innerHTML = sendMsgBox(data.msg);
+  chatOutgoingBox.innerHTML = sendMsgBox(data.msg, data.createdAt);
 
   chatBox.append(chatOutgoingBox);
 
   msgInput.value = "";
 }
 
-/* 메시지 창의 메시지를 추가하는 메서드 */
-function addMessage() {
+/* 입력한 메시지를 전송하는 메서드 */
+async function addMessage() {
   let chatBox = document.querySelector("#chat-box");
 
   let msgInput = document.querySelector("#chat-outgoing-msg");
@@ -39,6 +39,26 @@ function addMessage() {
     "월" +
     date.getDate() +
     "일";
+
+  let chat = {
+    sender: "ssar",
+    receiver: "cos",
+    msg: msgInput.value,
+  };
+
+  let response = await fetch("http://localhost:8080/chat", {
+    method: "post",
+    body: JSON.stringify(chat), // JS -> JSON으로 변경
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+    },
+  });
+
+  console.log(response);
+
+  let parseResponse = response.json();
+
+  console.log(parseResponse);
 
   chatOutgoingBox.innerHTML = sendMsgBox(msgInput.value, now);
 
