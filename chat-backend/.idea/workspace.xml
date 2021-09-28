@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4e340af4-47d8-4f20-b069-45596bea9ee6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatapp/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatapp/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatapp/domain/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatapp/domain/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatapp/repository/ChatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatapp/repository/ChatRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-frontend/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-frontend/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-frontend/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chat-frontend/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-frontend/js/chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +57,11 @@
       <workItem from="1632558971046" duration="157000" />
       <workItem from="1632559207356" duration="211000" />
       <workItem from="1632625403919" duration="1163000" />
+      <workItem from="1632635654197" duration="1952000" />
+      <workItem from="1632651684609" duration="3962000" />
+      <workItem from="1632737649394" duration="1016000" />
+      <workItem from="1632792728814" duration="998000" />
+      <workItem from="1632794153416" duration="402000" />
     </task>
     <servers />
   </component>

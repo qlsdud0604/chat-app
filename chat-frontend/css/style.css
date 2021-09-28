@@ -55,6 +55,7 @@ body {
 }
 .received_withd_msg {
   width: 57%;
+  margin-bottom: 8px;
 }
 .mesgs {
   float: left;
